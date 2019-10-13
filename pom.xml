@@ -10,10 +10,8 @@
     </parent>
     <groupId>com.example</groupId>
     <artifactId>mould</artifactId>
-    <packaging>war</packaging>  <!--此处更改打包方式-->
+    <packaging>jar</packaging>  <!--此处更改打包方式-->
     <version>1.0</version>
-    <name>demo</name>
-    <description>Demo project for Spring Boot</description>
 
     <properties>
         <java.version>1.8</java.version>
