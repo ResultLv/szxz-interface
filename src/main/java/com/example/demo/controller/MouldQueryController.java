@@ -1,7 +1,6 @@
 package com.example.demo.controller;
 
 import com.example.demo.entity.User;
-import com.example.demo.mapper.MouldMapper;
 import com.example.demo.service.MouldService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -9,18 +8,16 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
+@RequestMapping("/mould")
 public class MouldQueryController {
 
     @RequestMapping("/getUser")
     public User getUser(){
         User user = new User();
-        user.setUserName("吕瑞昭");
+        user.setUserName("ResultLv");
         user.setPassWord("123456");
         return user;
     }
-
-    @Autowired
-    private MouldMapper mouldMapper;
 
     @Autowired
     private MouldService mouldService;
